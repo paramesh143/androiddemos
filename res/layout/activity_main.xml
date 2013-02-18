@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+       <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="5dp" >
+
+        
+    <ImageView android:layout_width="100px" 
+    android:src="@drawable/logo"
+    android:paddingLeft="0px" 
+    
+     android:layout_height="80px">
+     
+     </ImageView>
+    <ImageButton android:layout_width="30px"  android:id="@+id/imageButton1" android:src="@drawable/login" android:layout_height="30px" android:layout_gravity="bottom"></ImageButton>
+    <TextView android:text="Login"  android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_gravity="bottom"></TextView>
+    <ImageButton android:layout_width="30px" android:id="@+id/imageButton2" android:src="@drawable/join" android:layout_height="30px" android:layout_gravity="bottom"></ImageButton>
+    <TextView android:text="share"  android:layout_height="30px" android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_gravity="bottom"></TextView>
+    <ImageButton android:layout_width="wrap_content" android:id="@+id/imageButton3" android:src="@drawable/share" android:layout_height="30px" android:layout_gravity="bottom"></ImageButton>
+     <TextView android:text="join"  android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_gravity="bottom"></TextView>
+    
+  </LinearLayout>
+   
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:background="#ff0000"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" />
+        
+ 	 	
+ 	 	              
+ 	 	               
+    </LinearLayout>
+</TabHost>

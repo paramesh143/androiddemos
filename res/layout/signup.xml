@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="10dip" >
+
+    <!-- Email Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:textColor="#0b84aa" />
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#ff0000" />
+
+      <EditText
+          android:id="@+id/name"
+          android:layout_width="258dp"
+          android:hint="Enter Your Name"
+          android:background="#00ff00"
+          android:layout_height="wrap_content"
+          android:singleLine="true" />
+     
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#ff0000" />
+
+       <EditText
+           android:id="@+id/email"
+           android:layout_width="254dp"
+           android:hint="Enter Your Email"
+           android:background="#00ff00"
+           android:layout_height="wrap_content"
+           android:singleLine="true" />
+
+    <!-- Password Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:background="#ff0000"
+        android:textColor="#372c24" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="255dp"
+        android:hint="Enter Your Passsword"
+        android:background="#00ff00"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:password="true"
+        android:singleLine="true" />
+    <!-- Login button -->
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:background="#0000ff"
+        android:text="Create Your Account" />
+
+    <TextView
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#ff0000"
+        android:text="or"
+        android:textColor="#372c24" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/plus" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/linkedin" />
+    </LinearLayout>
+
+   
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0000ff"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <!-- Email Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+          android:background="#ff0000"
+        android:textColor="#372c24" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="273dp"
+          android:background="#00ff00"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+
+    <!-- Password Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+          android:background="#ff0000"
+        android:textColor="#372c24" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+         android:background="#00ff00"
+        android:singleLine="true" />
+    <!-- Login button -->
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+          android:background="#00ff00"
+        android:onClick="forgotpassword"
+        android:text="Forgot Password?" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+             
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+             
+            android:src="@drawable/plus" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+           
+            android:src="@drawable/linkedin" />
+    </LinearLayout>
+
+    <!-- Link to Registration Screen -->
+
+    <Button
+        android:id="@+id/link_to_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need An Account ? Sign up "
+        android:textColor="#0b84aa"
+        android:onClick="newregister"
+        android:textSize="20dip" />
+
+</LinearLayout>
